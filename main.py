@@ -1,3 +1,4 @@
+import os
 import logging
 from background import keep_alive
 from aiogram import Bot, Dispatcher, types
