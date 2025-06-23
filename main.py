@@ -12,6 +12,7 @@ import asyncio
 import json
 
 TOKEN = os.environ.get("TOKEN")
+
 ADMIN_ID = 417084716  # Замените на ваш ID
 
 # Хранилище FSM
