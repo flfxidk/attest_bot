@@ -16,7 +16,8 @@ API_TOKEN = 'token'
 storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
-bot = Bot(token=API_TOKEN)
+TOKEN = os.environ.get("TOKEN")
+bot = Bot(token=TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 # Логирование
