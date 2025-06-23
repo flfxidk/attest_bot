@@ -17,7 +17,7 @@ API_TOKEN = '7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI'
 storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
-bot = Bot(token=API_TOKEN)
+bot = Bot(API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 # Логирование
