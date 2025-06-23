@@ -1,6 +1,5 @@
 import os
 import logging
-from background import keep_alive
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils import executor
@@ -541,7 +540,6 @@ async def startup_reminders():
 async def on_startup(dp):
     """Выполняется при запуске бота"""
     await startup_reminders()
-    keep_alive()
     logging.info("Startup reminders sent")
 
 
