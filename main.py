@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, time
 import asyncio
 import json
 
-API_TOKEN = '7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI'
+API_TOKEN = 7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI
 ADMIN_ID = 417084716  # Замените на ваш ID
 
 # Хранилище FSM
