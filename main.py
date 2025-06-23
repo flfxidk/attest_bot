@@ -12,6 +12,7 @@ import asyncio
 import json
 
 API_TOKEN = '7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI'
+TOKEN = os.environ.get("TOKEN")
 ADMIN_ID = 417084716  # Замените на ваш ID
 
 # Хранилище FSM
@@ -19,7 +20,7 @@ storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
 print(f"API_TOKEN: {API_TOKEN!r}")
-bot = Bot('7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI')
+bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 # Логирование
