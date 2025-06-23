@@ -1,4 +1,5 @@
 import logging
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils import executor
@@ -17,7 +18,7 @@ storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
 TOKEN = os.environ.get("TOKEN")
-bot = Bot(token=TOKEN)
+bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 # Логирование
