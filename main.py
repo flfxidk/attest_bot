@@ -11,14 +11,13 @@ from datetime import datetime, timedelta, time
 import asyncio
 import json
 
-API_TOKEN = 'token'
+API_TOKEN = '7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI'
 
 # Хранилище FSM
 storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
-TOKEN = os.environ.get("TOKEN")
-bot = Bot(TOKEN)
+bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
 # Логирование
