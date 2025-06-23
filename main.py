@@ -18,6 +18,7 @@ ADMIN_ID = 417084716  # Замените на ваш ID
 storage = MemoryStorage()
 
 # Инициализация бота и диспетчера
+print(f"API_TOKEN: {API_TOKEN!r}")
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
