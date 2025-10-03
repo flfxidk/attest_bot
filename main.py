@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, time
 import asyncio
 import json
 
-TOKEN = os.environ.get("7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI")
+TOKEN = "7548409263:AAFNaPL60NY57fB8mwXunFZkpawUPksNZPI"
 
 ADMIN_ID = 417084716  # Замените на ваш ID
 
@@ -547,4 +547,5 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.create_task(reminder_loop())
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+
 
